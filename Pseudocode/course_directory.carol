@@ -1,0 +1,41 @@
+Define get_course_number function:
+    Put "Enter the course number (e.g., CSC101):" to output
+    course_number = Get next input
+    Return course_number
+
+Define display_course_details function:
+    Input course_number, course_rooms, course_instructors, course_times
+    If course_number is in course_rooms:
+        Put "Course: " + course_number to output
+        Put "Room Number: " + course_rooms[course_number] to output
+        Put "Instructor: " + course_instructors[course_number] to output
+        Put "Meeting Time: " + course_times[course_number] to output
+    Else:
+        Put "Course not found." to output
+
+Define main function:
+    Define course_rooms as dictionary:
+        CSC101 -> 3004
+        CSC102 -> 4501
+        CSC103 -> 6755
+        NET110 -> 1244
+        COM241 -> 1411
+
+    Define course_instructors as dictionary:
+        CSC101 -> Haynes
+        CSC102 -> Alvarado
+        CSC103 -> Rich
+        NET110 -> Burke
+        COM241 -> Lee
+
+    Define course_times as dictionary:
+        CSC101 -> 8:00 a.m.
+        CSC102 -> 9:00 a.m.
+        CSC103 -> 10:00 a.m.
+        NET110 -> 11:00 a.m.
+        COM241 -> 1:00 p.m.
+
+    course_number = Call get_course_number function
+    Call display_course_details function with course_number, course_rooms, course_instructors, course_times
+
+Call main function
